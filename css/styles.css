@@ -61,8 +61,7 @@ body {
   text-transform: uppercase;
   }
   /* button */
-.btn,
-.btn-active {
+.btn {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 
@@ -94,11 +93,6 @@ body {
   line-height: 1.19;
 }
 /* фильтр,портфолио */
-.btn-active {
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-}
 .filter .btn {
   color: var(--primary-text-color);
   background-color: var(--btn-color);
@@ -137,7 +131,11 @@ body {
 .site-nav .link:focus,
 .item:hover,
 .item:focus,
-.contact-nav .active,
 .site-nav .active {
   color: var(--accent-color);
+}
+.filter .btn:hover,
+.filter .btn:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
